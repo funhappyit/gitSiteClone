@@ -12,6 +12,7 @@
     $toggleBtn.addEventListener('click',function(){
         toggleElements();
     });
+    
     window.addEventListener('resize',function(){
         if(window.innerWidth>1024){
             //off toggle element
