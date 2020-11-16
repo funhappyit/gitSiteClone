@@ -21,6 +21,18 @@
     });
     function toggleElements(){
         //유사 배열 for문 
+        /*
+            classList
+            classList를 이용하면 클래스를 조작하는 다양한 메서드들을 쓸 수 있다.
+            classList.add : 클래스를 필요에 따라 삽입한다.
+            classList.remove : 클래스를 필요에 따라 제거한다.
+
+            classList.contains : 값이 존재하는지 체크한다. (true/false)
+            classList.toggle(): 클래스값이 있는지 체크하고 없으면 더하고 있으면 제거한다.
+            replace( oldClass, newClass ):존재하는 클래스를 새로운 클래스로 교체한다.
+            item( Number ):콜렉션의 인덱스를 이용하여 클래스 값을 반환한다.
+
+        */
         [].forEach.call($toggles, function(toggle){
             toggle.classList.toggle('on');
         });
